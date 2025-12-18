@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>日本行程小工具</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="app-title">日本行程</div>
+      <nav class="tabs" id="mainTabs" aria-label="Main navigation"></nav>
+    </div>
+    <div class="subtabs-wrap" id="dayTabsWrap" hidden>
+      <nav class="subtabs" id="dayTabs" aria-label="Day navigation"></nav>
+    </div>
+  </header>
+
+  <main class="content" id="content" role="main"></main>
+
+  <div class="sheet-backdrop" id="sheetBackdrop" hidden></div>
+  <section class="sheet" id="sheet" aria-modal="true" role="dialog" hidden>
+    <div class="sheet-handle"></div>
+    <header class="sheet-header">
+      <div class="sheet-title" id="sheetTitle"></div>
+      <button class="sheet-close" id="sheetClose" aria-label="Close">×</button>
+    </header>
+    <div class="sheet-body" id="sheetBody"></div>
+    <footer class="sheet-footer" id="sheetFooter"></footer>
+  </section>
+
+  <script src="./data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
